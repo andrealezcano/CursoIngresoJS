@@ -6,13 +6,102 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 
 function Rectangulo () 
 {
+    var largo ;
+
+    var ancho ;
+
+    var largoParseado ;
+
+    var anchoParseado ;
+
+    var perimetroRectangular ;
+
+    var alambre ;
+
+    largo = txtIdLargo.value ;
+
+    ancho = txtIdAncho.value ;
+
+    largoParseado = parseInt(largo) ;
+
+    anchoParseado = parseInt(ancho) ;
+
+    perimetroRectangular = (largoParseado * 2 ) + (anchoParseado *2 )  ;
+
+    alambre = (perimetroRectangular) * 3 ;
+    
+    alert (alambre) ;
+
 
 }
 function Circulo () 
 {
-	
+
+    var radio ;
+
+    var radioParseado ;
+
+    var pi ;
+
+    var diametro ;
+
+    var perimetro ;
+    
+    var alambre ;
+
+    radio = txtIdRadio.value ;
+
+    radioParseado = parseInt(radio) ;
+
+    diametro = radioParseado * 2 ;
+
+    pi = 3.14 ;
+
+    perimetro = diametro * pi ;
+
+    alert (perimetro) ;
+
 }
 function Materiales () 
 {
+
+    var largo ;
+
+    var ancho ;
+
+    var largoParseado ;
+
+    var anchoParseado ;
+
+    var medidametroCuadrado ;
+
+    var bolsaCemento ;
+
+    var bolsaCal ;
+
+    var calculoPerimetro ;
+
+    var bolsasTerrero ;
+
+    largo = txtIdLargo.value ;
+
+    ancho = txtIdAncho.value ;
+
+    largoParseado = parseInt(largo) ;
+
+    anchoParseado = parseInt(ancho) ;
+
+    perimetroRectangular = (largoParseado * 2 ) + (anchoParseado *2 )  ;
+
+    metroCuadrado = largoParseado * anchoParseado ;
+
+    bolsaCemento = metroCuadrado / 2  ;
+
+    bolsaCal = metroCuadrado / 3  ;
+
+
+  alert("Usted necesita " + bolsaCal  + "de bolsas de Cal y" + bolsaCemento + "de bolsas de cemento") ;
+
+
 	
 }
